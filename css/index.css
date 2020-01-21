@@ -350,3 +350,12 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: black;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
