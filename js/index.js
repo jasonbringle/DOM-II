@@ -61,6 +61,39 @@ const changePink = document.getElementById('name')
 
 changePink.addEventListener('select', (event) => {
     event.target.style.color = 'pink'
-})
+});
+
+const body = document.querySelector('body')
+body.addEventListener('click',() => {
+    body.style.background = 'gray'
+});
+
+const intro = document.querySelector('.intro')
+intro.addEventListener('click', () =>{
+    intro.style.background = 'blue'
+    event.stopPropagation()
+});
+
+const pText = document.querySelector('p')
+pText.addEventListener('click', () => { 
+    pText.style.background = 'green'
+    event.stopPropagation()
+});
+
+const navLinkStop = document.getElementsByTagName('a');
+const navLinksArr = Array.from(navLinkStop);
+
+navLinksArr.forEach(links => {
+    links.addEventListener('click', () =>{
+        event.preventDefault()
+        event.stopPropagation()
+    })
+    
+
+});
+
+
+
+
 
 
